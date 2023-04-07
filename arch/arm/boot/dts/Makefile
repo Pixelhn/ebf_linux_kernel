@@ -608,7 +608,10 @@ dtb-$(CONFIG_SOC_IMX6SX) += \
 	imx6sxscm-epop-evb-ldo.dtb \
 	imx6sxscm-epop-evb-m4-ldo.dtb
 dtb-$(CONFIG_SOC_IMX6UL) += \
-	imx6ul-14x14-evk.dtb \
+	imx6ull-mmc-npi.dtb \
+	imx6ull-nand-npi.dtb 
+
+#	imx6ul-14x14-evk.dtb \
 	imx6ul-ccimx6ulsbcexpress.dtb \
 	imx6ul-14x14-evk-btwifi.dtb \
 	imx6ul-14x14-evk-btwifi-oob.dtb \
@@ -646,7 +649,7 @@ dtb-$(CONFIG_SOC_IMX6UL) += \
 	imx6ul-9x9-evk-btwifi.dtb \
 	imx6ul-9x9-evk-btwifi-oob.dtb \
 	imx6ul-9x9-evk-ldo.dtb
-dtb-$(CONFIG_SOC_IMX6ULL) += \
+#dtb-$(CONFIG_SOC_IMX6ULL) += \
 	imx6ull-14x14-ddr3-arm2.dtb \
 	imx6ull-14x14-ddr3-arm2-adc.dtb \
 	imx6ull-14x14-ddr3-arm2-cs42888.dtb \
@@ -687,7 +690,7 @@ dtb-$(CONFIG_SOC_IMX6SLL) += \
 	imx6sll-evk.dtb \
 	imx6sll-evk-reva.dtb \
 	imx6sll-evk-btwifi.dtb
-dtb-$(CONFIG_SOC_IMX6ULL) += \
+#dtb-$(CONFIG_SOC_IMX6ULL) += \
 	imx6ull-14x14-evk.dtb
 dtb-$(CONFIG_SOC_IMX7D) += \
 	imx7d-cl-som-imx7.dtb \
@@ -1382,7 +1385,7 @@ dtb-$(CONFIG_ARCH_ASPEED) += \
 targets += dtbs dtbs_install
 targets += $(dtb-y)
 
-subdir-y	:= overlays
+# subdir-y	:= overlays
 
 # Enable fixups to support overlays on imx6ull platforms
 ifeq ($(CONFIG_SOC_IMX6UL),y)
