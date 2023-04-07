@@ -960,7 +960,7 @@ struct dev_links_info {
  * instead, that structure, like kobject structures, is usually embedded within
  * a higher-level representation of the device.
  */
-struct device {
+struct device {//
 	struct device		*parent;
 
 	struct device_private	*p;
