@@ -149,6 +149,7 @@
 
 
 &fec1 {
+	local-mac-address = [82 8f 4e 88 f8 9d];
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_enet1>;
 	phy-mode = "rmii";
