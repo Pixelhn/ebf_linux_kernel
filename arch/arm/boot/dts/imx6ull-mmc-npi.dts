@@ -23,6 +23,7 @@
 	};
 	chosen {
 		stdout-path = &uart1;
+		bootargs = "console=ttymxc0 root=/dev/mmcblk1p3 rw rootfstype=ext4 rootwait";
 	};
 
 	memory {
